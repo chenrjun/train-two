@@ -1,0 +1,146 @@
+@CHARSET "UTF-8";
+
+ul {
+	margin: 0px !important;
+	margin-left: 0px;
+	padding: 0px;
+}
+
+ul li {
+	list-style: none !important;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+body {
+	font-size: 13px;
+	color: #444;
+	font-family: Arial;
+}
+
+/* first_bar start */
+.topbar li>a {
+	line-height: 45px;
+	padding: 0px 15px;
+	color: #666;
+	display: block;
+	position: relative;
+	z-index: 2;
+}
+
+.topbar li>a:hover {
+	color: orange;
+}
+
+.topbar.left, .topbar>li {
+	float: left;
+	position: relative;
+}
+
+.fitst_bar {
+	background-color: #efefef;
+}
+
+.topbar>li::after {
+	content: '';
+	display: block;
+	height: 45px;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	transform: skew(-30deg);
+}
+
+.topbar li>a.on {
+	color: orange;
+}
+
+.simple_pubu::after {
+	background-color: white;
+}
+
+.simple_buffet::after {
+	background-color: #A9A4A5;
+}
+
+.simple_buffet:hover:after {
+	background-color: black;
+}
+
+li.simple_buffet a, li.simple_buffet a:hover {
+	color: white;
+}
+
+.topbar.right {
+	float: right;
+	position: relative;
+}
+
+.topbar.right>li:hover:after {
+	background-color: white;
+	transform: skew(-30deg);
+}
+
+.fitst_bar #cummunity {
+	line-height: 42px;
+	margin-left: 5px;
+}
+
+#cummunity::after {
+	background: transparent;
+}
+
+#cummunity a {
+	float: left;
+	line-height: 32px;
+	margin-top: 6px;
+	vertical-align: middle;
+}
+
+#cummunity .publish {
+	background: #A9A4A5;
+	border-radius: 20px;
+	color: white;
+}
+
+/* row third_bar start  */
+.third_bar nav .on, .third_bar nav a:hover {
+	background-color: orange;
+}
+
+.third_bar {
+	background-color: #736558;
+	border-bottom: solid 7px #eaeaea;
+	position: relative;
+}
+
+.third_bar a {
+	display: inline-block;
+	line-height: 45px;
+	padding: 0 15px;
+}
+
+.third_bar nav a {
+	color: white;
+	font-size: 1.2em;
+}
+
+.third_bar .keyword a {
+	background-color: #5c5146;
+	border-radius: 30px;
+	line-height: 25px;
+	padding: 0 15px;
+	display: inline-block;
+	vertical-align: middle;
+	color: #fbeaa6;
+	position: relative;
+	margin-left: 5px;
+}
+
+.third_bar .keyword {
+	margin-top: 10px;
+}
